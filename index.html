@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SnapShot Copy</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu-container">
+        <a href="#" class="menu-text">MENU</a>
+        <a href="#" class="menu-icon">
+          <img src="assets/menu.png" alt="Menu Icon" />
+        </a>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+      </div>
+      <div class="nav-right">
+        <a href="" class="signup">signup</a>
+        <a href="" class="login">login</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="text-behind">Our Advantages</h1>
+      <div class="image-stack">
+        <img src="assets/image1.jpg" alt="Image 1" class="image" />
+        <img src="assets/image2.jpg" alt="Image 2" class="image" />
+        <img src="assets/image3.jpg" alt="Image 3" class="image" />
+        <img src="assets/image4.jpg" alt="Image 4" class="image" />
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="left-footer">Your smile, our position</div>
+        <div class="right-footer">
+            <div class="footer-icons">
+                <img src="assets/insta.png" alt="insta">
+                <img src="assets/youtube.png" alt="yt">
+                <img src="assets/facebook.png" alt="facebook">
+            </div>
+            <div class="footer-text">Best startup of 2023</div>
+        </div>
+    </footer>
+  </body>
+
+  <script>
+    const imageStack = document.querySelector(".image-stack");
+
+    imageStack.addEventListener("mouseover", () => {
+      imageStack.classList.add("hover");
+    });
+
+    imageStack.addEventListener("mouseout", () => {
+      imageStack.classList.remove("hover");
+    });
+  </script>
+</html>
